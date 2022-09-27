@@ -17,20 +17,21 @@
     .logo {
         color: $red;
         text-transform: uppercase;
+        width: 50%;
+        font-size: $heading;
     }
 
     .nav-links {
         display: flex;
         list-style: none;
-        justify-content: space-between;
-        width: 25%;
-
         li a {
             text-decoration: none;
             color: $white;
             text-transform: uppercase;
             font-weight: $bold;
             font-size: $regular;
+            margin-left: 3rem;
+
 
         }
     }
