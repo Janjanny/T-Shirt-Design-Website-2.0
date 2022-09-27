@@ -1,0 +1,38 @@
+@use 'abstracts/' as *;
+
+
+@media (max-width: 699px) {
+    .nav-bar {
+
+        .hamburger {
+            display: inline-block;
+            font-size: $regular2;
+            cursor: pointer;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .nav-links {
+            position: absolute;
+            background-color: $black;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            transition: all 0.2s;
+            text-align: center;
+
+            a {
+                display: block;
+                width: fit-content;
+            }
+        }
+
+    }
+}

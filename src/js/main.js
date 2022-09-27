@@ -1,1 +1,5 @@
-import "./../scss/main.scss"
+import "./../scss/main.scss";;
+import navBar from "./navbar.js";
+
+
+navBar();
