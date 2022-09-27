@@ -3,5 +3,151 @@
 
 .home {
     height: 100vh;
-    margin-top: 60px;
+    background-image: url('/assets/home/BACKGROUND.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .text-div {
+        width: 60%;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 5rem;
+
+        .title {
+            font-size: $mini-title;
+            line-height: 4.5rem;
+            font-weight: $extra-bold;
+            text-transform: uppercase;
+            letter-spacing: -.1rem;
+            margin-bottom: 2rem;
+            user-select: none;
+
+            span {
+                color: $red;
+            }
+        }
+
+        .title2 {
+            text-transform: uppercase;
+            width: 75%;
+            line-height: 2.2rem;
+            font-size: $heading;
+            user-select: none;
+            margin-bottom: 2rem;
+        }
+
+        .intro {
+            font-size: $regular2;
+            font-weight: $light;
+            margin-bottom: 2rem;
+        }
+
+        .buttons {
+            display: flex;
+            width: 100%;
+            
+            .browse-button {
+                background-color: $red;
+                @include button-size;
+                margin-right: 1.5rem;
+    
+                a {
+                    color: $white;
+                    @include button-text;
+                    z-index: 1;
+                    transition: all .5s;
+    
+                }
+    
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 140%;
+                    height: 100%;
+                    top: 0;
+                    left: -20%;
+                    background-color: $white;
+                    transform: skewX(40deg) scaleX(0);
+                    transform-origin: left;
+    
+                    transition: all .5s;
+                }
+                
+                &:hover::before {
+                    transform: skewX(40deg) scaleX(1);
+                }
+    
+                &:hover a {
+                    color: $red;
+                }
+            }
+    
+            .message-button {
+                background-color: transparent;
+                border: 1px solid $white;
+                @include button-size;
+
+                transition: all .5s;
+
+                span {
+                    color: $white;
+                    @include button-text;
+                    transition: all .5s;
+
+                }   
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 140%;
+                    height: 100%;
+                    top: 0;
+                    left: -20%;
+                    background-color: $white;
+
+                    transform: skewX(40deg) scaleX(0);
+                    transform-origin: left;
+    
+                    transition: all .5s;
+                }
+                
+                &:hover::before {
+                    transform: skewX(40deg) scaleX(1);
+                }
+                &:hover {
+                    border: 1px solid transparent;
+                }
+    
+                &:hover span {
+                    color: $red;
+                }
+
+                
+
+                
+            }
+        }
+    }
+
+    .image-div {
+        position: relative;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            position: absolute;
+            width: 100%;
+            transform: scale(1.6);
+            top: 28%;
+            right: 10%;
+        }
+    }
+
 }

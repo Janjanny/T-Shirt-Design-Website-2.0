@@ -217,10 +217,153 @@
 }
 .home {
   height: 100vh;
-  margin-top: 60px;
+  background-image: url("/BACKGROUND.badcd27d.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #141414;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.home .text-div {
+  width: 60%;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 5rem;
+}
+.home .text-div .title {
+  font-size: 5.5rem;
+  line-height: 4.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2rem;
+  user-select: none;
+}
+.home .text-div .title span {
+  color: #FF2626;
+}
+.home .text-div .title2 {
+  text-transform: uppercase;
+  width: 75%;
+  line-height: 2.2rem;
+  font-size: 2.3rem;
+  user-select: none;
+  margin-bottom: 2rem;
+}
+.home .text-div .intro {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.home .text-div .buttons {
+  display: flex;
+  width: 100%;
+}
+.home .text-div .buttons .browse-button {
+  background-color: #FF2626;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  overflow: hidden;
+  margin-right: 1.5rem;
+}
+.home .text-div .buttons .browse-button a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0.2rem 1.5rem;
+  z-index: 10;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.home .text-div .buttons .browse-button::before {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 100%;
+  top: 0;
+  left: -20%;
+  background-color: #FFFFFF;
+  transform: skewX(40deg) scaleX(0);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+.home .text-div .buttons .browse-button:hover::before {
+  transform: skewX(40deg) scaleX(1);
+}
+.home .text-div .buttons .browse-button:hover a {
+  color: #FF2626;
+}
+.home .text-div .buttons .message-button {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.home .text-div .buttons .message-button span {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0.2rem 1.5rem;
+  z-index: 10;
+  transition: all 0.5s;
+}
+.home .text-div .buttons .message-button::before {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 100%;
+  top: 0;
+  left: -20%;
+  background-color: #FFFFFF;
+  transform: skewX(40deg) scaleX(0);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+.home .text-div .buttons .message-button:hover::before {
+  transform: skewX(40deg) scaleX(1);
+}
+.home .text-div .buttons .message-button:hover {
+  border: 1px solid transparent;
+}
+.home .text-div .buttons .message-button:hover span {
+  color: #FF2626;
+}
+.home .image-div {
+  position: relative;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.home .image-div img {
+  position: absolute;
+  width: 100%;
+  transform: scale(1.6);
+  top: 28%;
+  right: 10%;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

@@ -1,0 +1,21 @@
+@use './fonts.scss' as *;
+
+@mixin button-size {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+@mixin button-text {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: $button-font;
+    font-weight: $bold;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding: .2rem 1.5rem;
+    z-index: 10;
+}
