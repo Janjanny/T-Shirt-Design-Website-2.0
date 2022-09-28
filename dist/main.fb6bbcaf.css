@@ -145,7 +145,7 @@
 .nav-bar .logo {
   color: #FF2626;
   text-transform: uppercase;
-  font-size: 2.3rem;
+  font-size: 2.3em;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -168,7 +168,7 @@
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   margin-left: 3rem;
   position: relative;
 }
@@ -188,10 +188,18 @@
   transform: scaleX(1);
 }
 
+@media (min-width: 1141px) {
+  .home .title {
+    line-height: 4.5rem;
+  }
+  .home .title2 {
+    line-height: 2.2rem;
+  }
+}
 @media (max-width: 699px) {
   .nav-bar .hamburger {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     cursor: pointer;
   }
   .nav-bar .hide {
@@ -215,6 +223,25 @@
     width: fit-content;
   }
 }
+@media (max-width: 1140px) {
+  .home .text-div {
+    font-size: 12px;
+  }
+  .home .text-div .title {
+    line-height: 3.5rem;
+  }
+  .home .text-div .title2 {
+    line-height: 1.8rem;
+  }
+}
+@media (max-width: 960px) {
+  .home .text-div {
+    font-size: 12px;
+  }
+  .home .image-div img {
+    top: 30%;
+  }
+}
 .home {
   height: 100vh;
   background-image: url("/BACKGROUND.badcd27d.png");
@@ -226,6 +253,7 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  font-size: 16px;
 }
 .home .text-div {
   width: 60%;
@@ -234,8 +262,7 @@
   padding-left: 5rem;
 }
 .home .text-div .title {
-  font-size: 5.5rem;
-  line-height: 4.5rem;
+  font-size: 5.5em;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.1rem;
@@ -248,13 +275,12 @@
 .home .text-div .title2 {
   text-transform: uppercase;
   width: 75%;
-  line-height: 2.2rem;
-  font-size: 2.3rem;
+  font-size: 2.3em;
   user-select: none;
   margin-bottom: 2rem;
 }
 .home .text-div .intro {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 300;
   margin-bottom: 2rem;
 }
@@ -275,7 +301,7 @@
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: 700;
   text-align: center;
   overflow: hidden;
@@ -317,7 +343,7 @@
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: 700;
   text-align: center;
   overflow: hidden;
@@ -371,7 +397,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-html {
+html, body {
   font-size: 16px;
 }
 

@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    font-size: 16px;
 
     .text-div {
         width: 60%;
@@ -21,13 +22,11 @@
 
         .title {
             font-size: $mini-title;
-            line-height: 4.5rem;
             font-weight: $extra-bold;
             text-transform: uppercase;
             letter-spacing: -.1rem;
             margin-bottom: 2rem;
             user-select: none;
-
             span {
                 color: $red;
             }
@@ -36,7 +35,6 @@
         .title2 {
             text-transform: uppercase;
             width: 75%;
-            line-height: 2.2rem;
             font-size: $heading;
             user-select: none;
             margin-bottom: 2rem;

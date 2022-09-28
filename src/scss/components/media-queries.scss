@@ -1,5 +1,15 @@
 @use 'abstracts/' as *;
 
+@media (min-width:1141px) {
+    .home {
+        .title {
+            line-height: 4.5rem;
+        }
+        .title2 {
+            line-height: 2.2rem;
+        }
+    }
+}
 
 @media (max-width: 699px) {
     .nav-bar {
@@ -34,5 +44,38 @@
             }
         }
 
+    }
+}
+
+@media (max-width: 1140px) {
+    .home {
+        .text-div {
+            font-size: 12px;
+
+            .title {
+                line-height: 3.5rem;
+            }
+            .title2 {
+                line-height: 1.8rem;
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 960px) {
+
+    .home {
+
+        .text-div {
+            font-size: 12px;
+        }
+
+        .image-div {
+            img {
+                top: 30%;
+            }
+        }
     }
 }
