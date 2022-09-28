@@ -188,60 +188,6 @@
   transform: scaleX(1);
 }
 
-@media (min-width: 1141px) {
-  .home .title {
-    line-height: 4.5rem;
-  }
-  .home .title2 {
-    line-height: 2.2rem;
-  }
-}
-@media (max-width: 699px) {
-  .nav-bar .hamburger {
-    display: inline-block;
-    font-size: 1.5em;
-    cursor: pointer;
-  }
-  .nav-bar .hide {
-    display: none;
-  }
-  .nav-bar .active {
-    display: block;
-  }
-  .nav-bar .nav-links {
-    position: absolute;
-    background-color: #141414;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    transition: all 0.2s;
-    text-align: center;
-  }
-  .nav-bar .nav-links a {
-    display: block;
-    width: fit-content;
-  }
-}
-@media (max-width: 1140px) {
-  .home .text-div {
-    font-size: 12px;
-  }
-  .home .text-div .title {
-    line-height: 3.5rem;
-  }
-  .home .text-div .title2 {
-    line-height: 1.8rem;
-  }
-}
-@media (max-width: 960px) {
-  .home .text-div {
-    font-size: 12px;
-  }
-  .home .image-div img {
-    top: 30%;
-  }
-}
 .home {
   height: 100vh;
   background-image: url("/BACKGROUND.badcd27d.png");
@@ -387,6 +333,257 @@
   right: 10%;
 }
 
+.shop {
+  width: 100%;
+  background-color: #141414;
+  font-size: 16px;
+  padding: 8rem 5rem 20rem;
+  overflow: hidden;
+}
+.shop .title {
+  color: #FF2626;
+  text-transform: uppercase;
+  font-size: 6em;
+  font-weight: 900;
+  letter-spacing: -0.1rem;
+}
+.shop .title2 {
+  font-size: 1.8em;
+  color: #FFFFFF;
+  font-weight: 300;
+  margin-top: -2.3rem;
+  margin-bottom: 10rem;
+}
+.shop .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(38em, 1fr));
+  grid-gap: 2em;
+  grid-auto-rows: 55em;
+}
+.shop .grid-container .item {
+  margin-bottom: 5em;
+}
+.shop .grid-container .item .img-container {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 34em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+.shop .grid-container .item .img-container img {
+  width: 50em;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.shop .grid-container .item .txt-container {
+  display: flex;
+  color: #FFFFFF;
+  margin-bottom: 2em;
+}
+.shop .grid-container .item .txt-container .name {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  width: 50%;
+}
+.shop .grid-container .item .txt-container .price {
+  font-size: 2.3em;
+  text-transform: uppercase;
+  line-height: 1em;
+  padding-top: 0.5em;
+  width: 50%;
+  text-align: right;
+}
+.shop .grid-container .item .txt-container .line-break1 {
+  width: 100%;
+}
+.shop .grid-container .item .txt-container .details {
+  width: 50%;
+  font-size: 1.1em;
+  padding-left: 1em;
+}
+.shop .grid-container .item .txt-container .details-button {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  margin-top: auto;
+  margin-left: auto;
+}
+.shop .grid-container .item .txt-container .details-button a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0.2rem 1.5rem;
+  z-index: 10;
+  color: #141414;
+  transition: all 0.5s;
+}
+.shop .grid-container .item .txt-container .details-button::before {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 100%;
+  top: 0;
+  left: -20%;
+  background-color: #141414;
+  transform: skewX(40deg) scaleX(0);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+.shop .grid-container .item .txt-container .details-button:hover::before {
+  transform: skewX(40deg) scaleX(1);
+}
+.shop .grid-container .item .txt-container .details-button:hover {
+  border: 1px solid #FFFFFF;
+}
+.shop .grid-container .item .txt-container .details-button:hover a {
+  color: #FFFFFF;
+}
+
+@media (min-width: 1141px) {
+  .home .title {
+    line-height: 4.5rem;
+  }
+  .home .title2 {
+    line-height: 2.2rem;
+  }
+}
+@media (max-width: 699px) {
+  .nav-bar .hamburger {
+    display: inline-block;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  .nav-bar .hide {
+    display: none;
+  }
+  .nav-bar .active {
+    display: block;
+  }
+  .nav-bar .nav-links {
+    position: absolute;
+    background-color: #141414;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    transition: all 0.2s;
+    text-align: center;
+  }
+  .nav-bar .nav-links a {
+    display: block;
+    width: fit-content;
+  }
+}
+@media (max-width: 1140px) {
+  .home .text-div {
+    font-size: 12px;
+  }
+  .home .text-div .title {
+    line-height: 3.5rem;
+  }
+  .home .text-div .title2 {
+    line-height: 1.8rem;
+  }
+}
+@media (max-width: 1025px) {
+  .home .text-div {
+    font-size: 11px;
+  }
+}
+@media (max-width: 960px) {
+  .home .image-div img {
+    top: 35%;
+  }
+}
+@media (max-width: 900px) {
+  html, body {
+    font-size: 14px;
+  }
+  .home .text-div {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .home .text-div .title {
+    margin-bottom: 1rem;
+    line-height: 4rem;
+  }
+  .home .text-div .title2 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home .text-div .buttons {
+    justify-content: center;
+  }
+  .home .image-div {
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  html, body {
+    font-size: 12px;
+  }
+  .home .text-div {
+    font-size: 12px;
+  }
+}
+@media (max-width: 495px) {
+  html, body {
+    font-size: 11px;
+  }
+  .home .text-div {
+    font-size: 11px;
+  }
+  .home .text-div .title {
+    line-height: 3.5rem;
+  }
+  .home .text-div .title2 {
+    width: 90%;
+  }
+}
+@media (max-width: 426px) {
+  html, body {
+    font-size: 10px;
+  }
+  .home .text-div {
+    font-size: 10px;
+  }
+  .home .text-div .title {
+    line-height: 3rem;
+  }
+  .home .text-div .title2 {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  html, body {
+    font-size: 8px;
+  }
+  .home .text-div {
+    font-size: 8px;
+  }
+  .home .text-div .title {
+    line-height: 2.5rem;
+  }
+  .home .text-div .title2 {
+    width: 90%;
+    line-height: 1.3rem;
+  }
+}
 *,
 *::before,
 *::after {
