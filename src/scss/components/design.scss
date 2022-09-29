@@ -1,0 +1,148 @@
+@use 'abstracts/' as *;
+
+
+.design {
+    width: 100%;
+    background-color: $black;
+    height: 250vh;
+    padding: 10em 0;
+    overflow: hidden;
+    color: $white;
+    overflow: hidden;
+
+    &__title {
+        color: $red;
+        font-size: $title;
+        font-weight: 800;
+        line-height: 6em;
+
+        text-transform: uppercase;
+        text-align: center;
+
+    }
+
+    #title3 {
+        color: $red;
+    }
+
+    &__quote {
+        color: $white;
+        font-size: $button-font;
+        text-align: center;
+        margin-bottom: 5em;
+        
+    
+    }
+
+    &__info {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 5em;
+
+        &__image {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 30em;
+                user-select: none;
+            }
+        }
+
+        &__text {
+            width: 50%;
+            padding-left: 2em;
+            padding-right: 2em;
+            padding-top: 1.5em;
+
+            &_heading {
+                font-size: $big-heading;
+                line-height: 3em;
+                font-weight: 800;
+                letter-spacing: -.07em;
+                margin-bottom: 3em;
+            }
+
+            &_list{
+                text-transform: uppercase;
+                padding-left: 2em;
+                font-size: $regular2;
+                margin-bottom: 2em;
+            }
+
+            &_description {
+                font-size: $regular;
+                width: 95%;
+                margin-bottom: 3em;
+            }
+
+            &_price {
+                font-size: $big-heading;
+                font-weight: 800;
+                letter-spacing: -.04em;
+
+            }
+
+            .button-div {
+                @include button-size;
+                width: 22em;
+                height: 3.5em;
+                background-color: $red;
+                margin-top: 2.5em;
+
+                transition: all .3s;
+
+                a {
+                    @include button-text;
+                    font-size: $button-font;
+                    color: $black;
+                    font-weight: 800;
+                    text-transform: uppercase;
+
+                    transition: all .3s;
+
+
+                    &:hover {
+                        color: $red;
+                    }
+                }
+
+                &:hover{
+                    background-color: $black;
+                    border: 2px solid $red;
+                }
+
+                
+            }
+
+            .red {
+                background-color: $red;
+
+
+                a {
+
+                    &:hover {
+                        color: $red;
+                    }
+                }
+
+
+                &:hover{
+                    background-color: transparent;
+                    border: 2px solid $red;
+                }
+            }
+        }
+    }
+
+    &__note {
+        text-align: center;
+        margin-top: 7em;
+        font-size: $regular2;
+        font-weight: 100;
+    }
+
+
+}

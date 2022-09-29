@@ -596,6 +596,234 @@
   color: #141414;
 }
 
+.design {
+  width: 100%;
+  background-color: #141414;
+  height: 250vh;
+  padding: 10em 0;
+  overflow: hidden;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+.design__title {
+  color: #FF2626;
+  font-size: 6em;
+  font-weight: 800;
+  line-height: 6em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.design #title3 {
+  color: #FF2626;
+}
+.design__quote {
+  color: #FFFFFF;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 5em;
+}
+.design__info {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 5em;
+}
+.design__info__image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.design__info__image img {
+  width: 30em;
+  user-select: none;
+}
+.design__info__text {
+  width: 50%;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1.5em;
+}
+.design__info__text_heading {
+  font-size: 3.5em;
+  line-height: 3em;
+  font-weight: 800;
+  letter-spacing: -0.07em;
+  margin-bottom: 3em;
+}
+.design__info__text_list {
+  text-transform: uppercase;
+  padding-left: 2em;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+.design__info__text_description {
+  font-size: 1.1em;
+  width: 95%;
+  margin-bottom: 3em;
+}
+.design__info__text_price {
+  font-size: 3.5em;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+.design__info__text .button-div {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  overflow: hidden;
+  width: 22em;
+  height: 3.5em;
+  background-color: #FF2626;
+  margin-top: 2.5em;
+  transition: all 0.3s;
+}
+.design__info__text .button-div a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0.2em 1.5em;
+  z-index: 10;
+  font-size: 1.8em;
+  color: #141414;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.design__info__text .button-div a:hover {
+  color: #FF2626;
+}
+.design__info__text .button-div:hover {
+  background-color: #141414;
+  border: 2px solid #FF2626;
+}
+.design__info__text .red {
+  background-color: #FF2626;
+}
+.design__info__text .red a:hover {
+  color: #FF2626;
+}
+.design__info__text .red:hover {
+  background-color: transparent;
+  border: 2px solid #FF2626;
+}
+.design__note {
+  text-align: center;
+  margin-top: 7em;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.carousel {
+  background-color: #141414;
+  width: 100%;
+  height: 52vh;
+  overflow: hidden;
+  padding: auto 0;
+  position: relative;
+}
+.carousel__list {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling 52s linear infinite;
+}
+.carousel__list__item {
+  width: 40rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.carousel__list__item img {
+  width: 40rem;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-390vw);
+  }
+}
+.carousel2 {
+  position: relative;
+  height: 35rem;
+  width: 60rem;
+  margin: 0 auto;
+}
+.carousel2__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel2__container {
+  background-color: red;
+  height: 100%;
+  position: relative;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.carousel2__container__track {
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: all 0.7s ease-in-out;
+}
+.carousel2__container__track__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.carousel2__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.carousel2__button .icon {
+  font-size: 3rem;
+  color: #141414;
+}
+.carousel2__button--left {
+  left: 1rem;
+  z-index: 1;
+}
+.carousel2__button--right {
+  right: 1rem;
+  z-index: 1;
+}
+.carousel2__nav {
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem 0;
+}
+.carousel2__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.8rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+.carousel2__indicator.current-slide {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.carousel2__indicator.current-slide3 {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.carousel2 .is-hidden, .carousel2 .is-hidden3 {
+  display: none;
+}
+
 @media (min-width: 1141px) {
   .home .title {
     line-height: 4.5rem;
