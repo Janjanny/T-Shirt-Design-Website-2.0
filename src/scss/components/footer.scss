@@ -1,0 +1,165 @@
+@use 'abstracts/' as *;
+
+.footer {
+    width: 100%;
+    height: 80vh;
+    padding: 1em 5em;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    overflow: hidden;
+
+    .text {
+        width: 50%;
+
+        &__title{
+            font-size: calc($big-heading + .5em);
+            text-transform: uppercase;
+            font-weight: $extra-bold;
+        }
+
+        &__caption {
+            font-size: $regular;
+            width: 90%;
+            text-align: justify;
+            margin-bottom: 1em;
+
+        }
+
+        .phone-icon {
+            font-size: $regular2;
+            margin-right: .5em;
+        }
+
+        &__number {
+            display: inline;
+            font-size: $regular;
+        }
+
+        .envelop-icon {
+            font-size: $regular2;
+            margin-top: 1em;
+            margin-right: .5em;
+
+        }
+
+        &__email {
+            display: inline;
+            font-size: $regular;
+        }
+
+        &__icons {
+            font-size: $heading;
+            margin-top: 1em;
+            display: flex;
+
+            a {
+                color: $white;
+                margin-right: .8em;
+                transition: all .5s;
+                
+                &:hover {
+                    color: $red;
+                    transform: translateY(-.3em);
+                }
+            }
+        }
+    }
+
+    .form-div {
+        width: 50%;
+        height: 100%;
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            justify-content: center;
+            margin-left: auto;
+            position: relative;
+
+            input {
+                &[type="email"], &[type="text"] {
+                    width: 100%;
+                    height: 2.5rem;
+                    padding-left: .8rem;
+                    background-color: transparent;
+                    color: $white;
+                    border: 0.125rem solid $white;
+                    
+                    margin-bottom: 1rem;
+                    font-size: $regular
+
+                    
+                }
+
+                &:focus {
+                    outline: none;
+                    border: 0.1875 solid $red;
+                }
+                
+                &:-webkit-autofill {
+                    box-shadow: 0 0 0px 1000px $black inset;
+                    -webkit-text-fill-color: $white;
+                }
+                
+            }
+
+            #message-box {
+                background-color: transparent;
+                color: $white;
+                font-size: $regular;
+                border: 0.125rem solid $white;
+                
+                margin-bottom: 1rem;
+                padding-left: .8rem;
+                padding-top: .2rem;
+                resize: none;
+                width: 100%;
+
+
+                &:focus {
+                    border: 0.1875 solid $red;
+                    outline: none;
+                }
+            }
+
+            .submit {
+                @include button-size;
+                background-color: transparent;
+                border: 2px solid $white;
+
+                span {
+                    @include button-text;
+                    color: $white;
+                    transition: all .5s;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 140%;
+                    height: 100%;
+                    top: 0;
+                    left: -20%;
+                    background-color: $white;
+
+                    transform: skewX(40deg) scaleX(0);
+                    transform-origin: left;
+    
+                    transition: all .5s;
+                }
+                
+                &:hover::before {
+                    transform: skewX(40deg) scaleX(1);
+                }
+                &:hover {
+                    border: none;
+                }
+    
+                &:hover span {
+                    color: $black;
+                }
+            }
+        }
+    }
+}

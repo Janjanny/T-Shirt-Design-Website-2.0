@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/2ac6ace852.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     
 <link rel="stylesheet" href="/main.fb6bbcaf.css"></head>
 <body>
@@ -42,6 +44,7 @@
         </div>
     </section>
 
+    <!-- shop section -->
     <section class="shop">
         <div class="title-div">
             <h1 class="title">premade designs</h1>
@@ -204,7 +207,53 @@
     </div></section>
 
 
+    <!-- footer -->
+    <footer class="footer">
+        <div class="text" data-aos="fade-right" data-aos-delay="100" data-aos-duration="900">
+            <h1 class="text__title">
+                Get in Touch!
+            </h1>
+            <p class="text__caption">
+                Did you have a great time? I Hoped you find something you like. Any other inquiries? You can email me personally, or you can reach me on one of my other social media profiles. Good day, and thank you for your time.
+            </p>
+            <i class="fa-solid fa-phone phone-icon"></i>
+            <p class="text__number">- 0997-652-9571</p>
+            <br>
+            <i class="fa-solid fa-envelope envelop-icon"></i>
+            <p class="text__email">- janjanbeboso0912@gmail.com</p>
+            <div class="text__icons">
+                <a href=""><i class="fa-brands fa-facebook-f icon"></i></a>
+
+                <a href=""><i class="fa-brands fa-twitter icon"></i></a>
+
+                <a href=""><i class="fa-brands fa-square-instagram icon"></i></a>
+
+                <a href=""><i class="fa-brands fa-github icon"></i></a>
+            </div>
+        </div>
+        <div class="form-div" data-aos="fade-left" data-aos-delay="200" data-aos-duration="900">
+            <form action="https://formsubmit.co/janjanbeboso0912@gmail.com" method="POST">
+                <label for="Email">Email</label>
+                <input type="email" name="Email" required="" pattern=".+@.+\..+" placeholder="example@sample.com">
+
+                <label for="Name">Name</label>
+                <input type="text" name="Name" required="" placeholder="Juan Dela Cruz">
+
+                <label for="Contact-Number">Contact Number</label>
+                <input type="text" name="Contact-Number" required="" placeholder="0912-345-6789">
+
+                <label for="Message">Message</label>
+                <textarea name="Message" id="message-box" rows="5" cols="5" placeholder="I would like to buy this design..."></textarea>
+
+
+                <button type="submit" class="submit"><span>Send Message</span></button>
+            </form>
+        </div>
+    </footer>
+
     <script src="/main.fb6bbcaf.js"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

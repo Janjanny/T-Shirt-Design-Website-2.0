@@ -252,7 +252,7 @@
   text-align: center;
   overflow: hidden;
   position: relative;
-  padding: 0.2rem 1.5rem;
+  padding: 0.2em 1.5em;
   z-index: 10;
   z-index: 1;
   transition: all 0.5s;
@@ -294,7 +294,7 @@
   text-align: center;
   overflow: hidden;
   position: relative;
-  padding: 0.2rem 1.5rem;
+  padding: 0.2em 1.5em;
   z-index: 10;
   transition: all 0.5s;
 }
@@ -424,7 +424,7 @@
   text-align: center;
   overflow: hidden;
   position: relative;
-  padding: 0.2rem 1.5rem;
+  padding: 0.2em 1.5em;
   z-index: 10;
   color: #141414;
   transition: all 0.5s;
@@ -449,6 +449,149 @@
 }
 .shop .grid-container .item .txt-container .details-button:hover a {
   color: #FFFFFF;
+}
+
+.footer {
+  width: 100%;
+  height: 80vh;
+  padding: 1em 5em;
+  background-color: #141414;
+  color: #FFFFFF;
+  display: flex;
+  overflow: hidden;
+}
+.footer .text {
+  width: 50%;
+}
+.footer .text__title {
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.footer .text__caption {
+  font-size: 1.1em;
+  width: 90%;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+.footer .text .phone-icon {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+.footer .text__number {
+  display: inline;
+  font-size: 1.1em;
+}
+.footer .text .envelop-icon {
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-right: 0.5em;
+}
+.footer .text__email {
+  display: inline;
+  font-size: 1.1em;
+}
+.footer .text__icons {
+  font-size: 2.3em;
+  margin-top: 1em;
+  display: flex;
+}
+.footer .text__icons a {
+  color: #FFFFFF;
+  margin-right: 0.8em;
+  transition: all 0.5s;
+}
+.footer .text__icons a:hover {
+  color: #FF2626;
+  transform: translateY(-0.3em);
+}
+.footer .form-div {
+  width: 50%;
+  height: 100%;
+}
+.footer .form-div form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  margin-left: auto;
+  position: relative;
+}
+.footer .form-div form input[type=email], .footer .form-div form input[type=text] {
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 0.8rem;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 0.125rem solid #FFFFFF;
+  margin-bottom: 1rem;
+  font-size: 1.1em;
+}
+.footer .form-div form input:focus {
+  outline: none;
+  border: 0.1875 solid #FF2626;
+}
+.footer .form-div form input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #141414 inset;
+  -webkit-text-fill-color: #FFFFFF;
+}
+.footer .form-div form #message-box {
+  background-color: transparent;
+  color: #FFFFFF;
+  font-size: 1.1em;
+  border: 0.125rem solid #FFFFFF;
+  margin-bottom: 1rem;
+  padding-left: 0.8rem;
+  padding-top: 0.2rem;
+  resize: none;
+  width: 100%;
+}
+.footer .form-div form #message-box:focus {
+  border: 0.1875 solid #FF2626;
+  outline: none;
+}
+.footer .form-div form .submit {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+}
+.footer .form-div form .submit span {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0.2em 1.5em;
+  z-index: 10;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+.footer .form-div form .submit::before {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 100%;
+  top: 0;
+  left: -20%;
+  background-color: #FFFFFF;
+  transform: skewX(40deg) scaleX(0);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+.footer .form-div form .submit:hover::before {
+  transform: skewX(40deg) scaleX(1);
+}
+.footer .form-div form .submit:hover {
+  border: none;
+}
+.footer .form-div form .submit:hover span {
+  color: #141414;
 }
 
 @media (min-width: 1141px) {
