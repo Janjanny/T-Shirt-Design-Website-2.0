@@ -64,12 +64,22 @@
     }
 }
 
+@media (max-width: 1063px) {
+    .shop {
+        .title-div {
+            font-size: 12px;
+        }
+    }
+}
+
 @media (max-width: 1025px) {
     .home {
         .text-div {
             font-size: 11px;
         }
     }
+
+
 }
 
 @media (max-width: 960px) {
@@ -118,6 +128,43 @@
     }
 }
 
+@media (max-width: 835px) {
+    .shop {
+        .title-div {
+            font-size: 16px;
+            text-align: center;
+
+            .title {
+                line-height: .8em;
+            }
+
+            .title2 {
+                margin-top: 1em;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 1em;
+            }
+        }
+
+        .grid-container {
+            font-size: 12px;
+            
+        }
+    }
+}
+
+@media (max-width: 636px) {
+    .shop {
+
+        .title-div {
+            font-size: 12px;
+        }
+        .grid-container {
+            font-size: 11px;
+        }
+    }
+}
 
 @media (max-width: 560px) {
     html, body {
@@ -127,6 +174,17 @@
     .home {
         .text-div {
             font-size: 12px;
+        }
+    }
+
+    .shop {
+        padding: 8em 2em 20em;
+
+        .title-div {
+            font-size: 13px;
+        }
+        .grid-container {
+            font-size: 9px;
         }
     }
 }
@@ -151,6 +209,17 @@
             }
         }
     }
+
+    .shop {
+
+        .title-div {
+            font-size: 11px;
+        }
+
+        .grid-container {
+            font-size: 8px;
+        }
+    }
 }
 
 @media (max-width: 426px) {
@@ -169,6 +238,21 @@
 
             .title2 {
                 width: 90%;
+            }
+        }
+    }
+
+    .shop {
+        padding: 8em 1em 20em;
+
+        .title-div{
+            font-size: 9px;
+        }
+        .grid-container{
+            font-size: 7.5px;
+
+            .details-button {
+                width: 50%;
             }
         }
     }

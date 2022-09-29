@@ -337,7 +337,7 @@
   width: 100%;
   background-color: #141414;
   font-size: 16px;
-  padding: 8rem 5rem 20rem;
+  padding: 8em 5em 20em;
   overflow: hidden;
 }
 .shop .title {
@@ -351,7 +351,7 @@
   font-size: 1.8em;
   color: #FFFFFF;
   font-weight: 300;
-  margin-top: -2.3rem;
+  margin-top: -1.3em;
   margin-bottom: 10rem;
 }
 .shop .grid-container {
@@ -402,7 +402,7 @@
   width: 100%;
 }
 .shop .grid-container .item .txt-container .details {
-  width: 50%;
+  width: 40%;
   font-size: 1.1em;
   padding-left: 1em;
 }
@@ -497,6 +497,11 @@
     line-height: 1.8rem;
   }
 }
+@media (max-width: 1063px) {
+  .shop .title-div {
+    font-size: 12px;
+  }
+}
 @media (max-width: 1025px) {
   .home .text-div {
     font-size: 11px;
@@ -533,12 +538,48 @@
     display: none;
   }
 }
+@media (max-width: 835px) {
+  .shop .title-div {
+    font-size: 16px;
+    text-align: center;
+  }
+  .shop .title-div .title {
+    line-height: 0.8em;
+  }
+  .shop .title-div .title2 {
+    margin-top: 1em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1em;
+  }
+  .shop .grid-container {
+    font-size: 12px;
+  }
+}
+@media (max-width: 636px) {
+  .shop .title-div {
+    font-size: 12px;
+  }
+  .shop .grid-container {
+    font-size: 11px;
+  }
+}
 @media (max-width: 560px) {
   html, body {
     font-size: 12px;
   }
   .home .text-div {
     font-size: 12px;
+  }
+  .shop {
+    padding: 8em 2em 20em;
+  }
+  .shop .title-div {
+    font-size: 13px;
+  }
+  .shop .grid-container {
+    font-size: 9px;
   }
 }
 @media (max-width: 495px) {
@@ -554,6 +595,12 @@
   .home .text-div .title2 {
     width: 90%;
   }
+  .shop .title-div {
+    font-size: 11px;
+  }
+  .shop .grid-container {
+    font-size: 8px;
+  }
 }
 @media (max-width: 426px) {
   html, body {
@@ -567,6 +614,18 @@
   }
   .home .text-div .title2 {
     width: 90%;
+  }
+  .shop {
+    padding: 8em 1em 20em;
+  }
+  .shop .title-div {
+    font-size: 9px;
+  }
+  .shop .grid-container {
+    font-size: 7.5px;
+  }
+  .shop .grid-container .details-button {
+    width: 50%;
   }
 }
 @media (max-width: 400px) {
