@@ -142,6 +142,9 @@
   align-items: center;
   user-select: none;
 }
+.nav-bar a {
+  text-decoration: none;
+}
 .nav-bar .logo {
   color: #FF2626;
   text-transform: uppercase;
@@ -453,8 +456,7 @@
 
 .footer {
   width: 100%;
-  height: 80vh;
-  padding: 1em 5em;
+  padding: 5em 5em;
   background-color: #141414;
   color: #FFFFFF;
   display: flex;
@@ -519,12 +521,12 @@
 }
 .footer .form-div form input[type=email], .footer .form-div form input[type=text] {
   width: 100%;
-  height: 2.5rem;
-  padding-left: 0.8rem;
+  height: 2.5em;
+  padding-left: 0.8em;
   background-color: transparent;
   color: #FFFFFF;
-  border: 0.125rem solid #FFFFFF;
-  margin-bottom: 1rem;
+  border: 0.125em solid #FFFFFF;
+  margin-bottom: 1em;
   font-size: 1.1em;
 }
 .footer .form-div form input:focus {
@@ -539,10 +541,10 @@
   background-color: transparent;
   color: #FFFFFF;
   font-size: 1.1em;
-  border: 0.125rem solid #FFFFFF;
-  margin-bottom: 1rem;
-  padding-left: 0.8rem;
-  padding-top: 0.2rem;
+  border: 0.125em solid #FFFFFF;
+  margin-bottom: 1em;
+  padding-left: 0.8em;
+  padding-top: 0.2em;
   resize: none;
   width: 100%;
 }
@@ -639,6 +641,10 @@
   .home .text-div .title2 {
     line-height: 1.8rem;
   }
+  .footer .text__title {
+    line-height: 1em;
+    margin-bottom: 0.5em;
+  }
 }
 @media (max-width: 1063px) {
   .shop .title-div {
@@ -649,13 +655,16 @@
   .home .text-div {
     font-size: 11px;
   }
+  .footer {
+    font-size: 15px;
+  }
 }
 @media (max-width: 960px) {
   .home .image-div img {
     top: 35%;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 909px) {
   html, body {
     font-size: 14px;
   }
@@ -680,6 +689,9 @@
   .home .image-div {
     display: none;
   }
+  .footer {
+    font-size: 11px;
+  }
 }
 @media (max-width: 835px) {
   .shop .title-div {
@@ -698,6 +710,16 @@
   }
   .shop .grid-container {
     font-size: 12px;
+  }
+  .footer {
+    font-size: 10px;
+    padding: 5em 2em;
+  }
+  .footer .form-div form {
+    width: 90%;
+  }
+  .footer .form-div form .submit {
+    font-size: 10px;
   }
 }
 @media (max-width: 636px) {
@@ -769,6 +791,13 @@
   }
   .shop .grid-container .details-button {
     width: 50%;
+  }
+  .footer {
+    font-size: 8px;
+  }
+  .footer .form-div form .submit {
+    font-size: 0.8em;
+    border: 1px solid #FFFFFF;
   }
 }
 @media (max-width: 400px) {

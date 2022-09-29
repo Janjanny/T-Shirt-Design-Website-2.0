@@ -9,6 +9,8 @@
             line-height: 2.2rem;
         }
     }
+
+
 }
 
 @media (max-width: 699px) {
@@ -62,6 +64,15 @@
 
         }
     }
+
+    .footer {
+        .text {
+            &__title {
+                line-height: 1em;
+                margin-bottom: .5em;
+            }
+        }
+    }
 }
 
 @media (max-width: 1063px) {
@@ -77,6 +88,10 @@
         .text-div {
             font-size: 11px;
         }
+    }
+
+    .footer {
+        font-size: 15px;
     }
 
 
@@ -95,7 +110,7 @@
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 909px) {
 
     html, body {
         font-size: 14px;
@@ -126,6 +141,10 @@
             display: none;
         }
     }
+
+    .footer {
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 835px) {
@@ -150,6 +169,21 @@
         .grid-container {
             font-size: 12px;
             
+        }
+    }
+
+    .footer {
+        font-size: 10px;
+        padding: 5em 2em;
+
+
+        .form-div {
+            form {
+                width: 90%;
+                .submit {
+                    font-size: 10px;
+                }
+            }
         }
     }
 }
@@ -253,6 +287,19 @@
 
             .details-button {
                 width: 50%;
+            }
+        }
+    }
+
+    .footer {
+        font-size: 8px;
+
+        .form-div {
+            form {
+                .submit {
+                    font-size: calc($regular - .3em);
+                    border: 1px solid $white;
+                }
             }
         }
     }
