@@ -1,11 +1,26 @@
 @use 'abstracts/' as *;
 
+.design-nav {
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    padding: 1em 0 0 1.5em;
+    font-size: $big-heading;
+
+    a {
+        color: $white;
+        transition: all .3s;
+        &:hover {
+            color: $red;
+        }
+    }
+}
 
 .design {
     width: 100%;
     background-color: $black;
-    height: 250vh;
-    padding: 10em 0;
+    height: 100%;
+    padding-bottom: 5em;
     overflow: hidden;
     color: $white;
     overflow: hidden;
@@ -13,23 +28,20 @@
     &__title {
         color: $red;
         font-size: $title;
-        font-weight: 800;
-        line-height: 6em;
-
+        font-weight: $extra-bold;
         text-transform: uppercase;
         text-align: center;
 
     }
 
-    #title3 {
-        color: $red;
-    }
 
     &__quote {
         color: $white;
         font-size: $button-font;
+        font-weight: $light;
         text-align: center;
         margin-bottom: 5em;
+        line-height: 1em;
         
     
     }
@@ -38,7 +50,7 @@
         display: flex;
         width: 100%;
         flex-wrap: wrap;
-        margin-top: 5em;
+        margin: 5em auto;
 
         &__image {
             width: 50%;
@@ -53,7 +65,6 @@
 
         &__text {
             width: 50%;
-            padding-left: 2em;
             padding-right: 2em;
             padding-top: 1.5em;
 
@@ -61,8 +72,7 @@
                 font-size: $big-heading;
                 line-height: 3em;
                 font-weight: 800;
-                letter-spacing: -.07em;
-                margin-bottom: 3em;
+                letter-spacing: -.01em;
             }
 
             &_list{
@@ -87,8 +97,6 @@
 
             .button-div {
                 @include button-size;
-                width: 22em;
-                height: 3.5em;
                 background-color: $red;
                 margin-top: 2.5em;
 
@@ -96,7 +104,6 @@
 
                 a {
                     @include button-text;
-                    font-size: $button-font;
                     color: $black;
                     font-weight: 800;
                     text-transform: uppercase;

@@ -301,6 +301,26 @@ function carouselDesign() {
     hideShowArrows(slides, nextButton, prevButton, targetIndex);
   });
 }
+},{}],"js/form1.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = form1;
+
+function form1() {
+  var designName = document.querySelector('.designName');
+  var popUpForm = document.querySelector('.pop-up');
+  var name = document.getElementById('title1').textContent;
+  document.getElementById('button1').addEventListener('click', function () {
+    popUpForm.showModal();
+    designName.setAttribute('value', name);
+  });
+  document.getElementById('close-form').addEventListener('click', function () {
+    popUpForm.close();
+  });
+}
 },{}],"js/design.js":[function(require,module,exports) {
 "use strict";
 
@@ -308,10 +328,13 @@ require("./../scss/main.scss");
 
 var _carouselDesign = _interopRequireDefault(require("./carouselDesign.js"));
 
+var _form = _interopRequireDefault(require("./form1"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _carouselDesign.default)();
-},{"./../scss/main.scss":"scss/main.scss","./carouselDesign.js":"js/carouselDesign.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+(0, _form.default)();
+},{"./../scss/main.scss":"scss/main.scss","./carouselDesign.js":"js/carouselDesign.js","./form1":"js/form1.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -339,7 +362,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50851" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52588" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,54 +1,12 @@
 
 @use 'abstracts/' as *;
 
-$elements: 13;
-$elements-displayed: 4;
-$animation-duration: calc($elements * 4s);
-
-.carousel {
-    background-color: $black;
-    width: 100%;
-    height: 52vh;
-    overflow: hidden;
-    padding: auto 0;
-    position: relative;
-
-    
-
-    &__list {
-        list-style: none;
-        height: 100%;
-        display: flex;
-        animation: scrolling $animation-duration linear infinite;
-
-
-        &__item {
-            width: 40rem;
-            flex-shrink: 0;
-            white-space: nowrap;
-
-            img {
-                width: 40rem;
-            }
-        }
-    }
-}
-
-
-@keyframes scrolling {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-1*30vw*$elements);
-    }
-}
 
 
 .carousel2 {
     position: relative;
-    height: 35rem;
-    width: 60rem;
+    height: 45em;
+    width: 80em;
     margin: 0 auto;
 
     &__image {
@@ -62,8 +20,8 @@ $animation-duration: calc($elements * 4s);
         background-color: red;
         height: 100%;
         position: relative;
-        border-radius: 3rem;
         overflow: hidden;
+        border-radius: 1em;
 
 
         &__track {
@@ -93,33 +51,33 @@ $animation-duration: calc($elements * 4s);
         cursor: pointer;
 
         .icon {
-            font-size: 3rem;
+            font-size: 3em;
             color: $black;
         }
     }
 
     &__button--left {
-        left: 1rem;
+        left: 1em;
         z-index: 1;
     }
 
     &__button--right {
-        right: 1rem;
+        right: 1em;
         z-index: 1;
     }
 
     &__nav {
         display: flex;
         justify-content: center;
-        padding: .8rem 0;
+        padding: .8em 0;
     }
 
     &__indicator {
         border: 0;
         border-radius: 50%;
-        width: 1rem;
-        height: 1rem;
-        margin: 0 .8rem;
+        width: 1em;
+        height: 1em;
+        margin: 0 .8em;
         background-color: rgba($color: $white, $alpha: .3);
         cursor: pointer;
     }
