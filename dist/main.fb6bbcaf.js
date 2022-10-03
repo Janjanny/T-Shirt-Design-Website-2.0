@@ -11466,7 +11466,6 @@ var _carouselDesign = _interopRequireDefault(require("./carouselDesign.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-;
 (0, _navbar.default)();
 (0, _carouselDesign.default)();
 },{"./../scss/main.scss":"scss/main.scss","./navbar.js":"js/navbar.js","./carouselDesign.js":"js/carouselDesign.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -11497,7 +11496,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50235" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50851" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
