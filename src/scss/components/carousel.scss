@@ -3,94 +3,100 @@
 
 
 
-.carousel2 {
-    position: relative;
-    height: 45em;
-    width: 80em;
+.carousel_container {
+    height: 60em;
+    width: 80%;
     margin: 0 auto;
-
-    &__image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-    }
-
-    &__container {
-        background-color: red;
-        height: 100%;
+    position: relative;
+    .carousel2 {
         position: relative;
-        overflow: hidden;
-        border-radius: 1em;
-
-
-        &__track {
-            list-style: none;
-            position: relative;
+        height: 80%;
+        width: 100%;
+    
+        &__image {
+            width: 100%;
             height: 100%;
-
-            transition: all .7s ease-in-out;
-
-            &__slide {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                width: 100%;
+            object-fit: cover;
+    
+        }
+    
+        &__container {
+            background-color: $white;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 1em;
+    
+    
+            &__track {
+                list-style: none;
+                position: relative;
+                height: 100%;
+    
+                transition: all .7s ease-in-out;
+    
+                &__slide {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    width: 100%;
+                }
             }
+            
         }
         
-    }
     
-
-    &__button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: transparent;
-        border: 0;
-        cursor: pointer;
-
-        .icon {
-            font-size: 3em;
-            color: $black;
+        &__button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+    
+            .icon {
+                font-size: 3em;
+                color: $black;
+            }
+        }
+    
+        &__button--left {
+            left: 1em;
+            z-index: 1;
+        }
+    
+        &__button--right {
+            right: 1em;
+            z-index: 1;
+        }
+    
+        &__nav {
+            display: flex;
+            justify-content: center;
+            padding: .8em 0;
+        }
+    
+        &__indicator {
+            border: 0;
+            border-radius: 50%;
+            width: 1em;
+            height: 1em;
+            margin: 0 .8em;
+            background-color: rgba($color: $white, $alpha: .3);
+            cursor: pointer;
+        }
+    
+        &__indicator.current-slide {
+            background-color: rgba($color: $white, $alpha: .80);
+        }
+    
+        &__indicator.current-slide3 {
+            background-color: rgba($color: $white, $alpha: .80);
+        }
+    
+        .is-hidden, .is-hidden3 {
+            display: none;
         }
     }
-
-    &__button--left {
-        left: 1em;
-        z-index: 1;
-    }
-
-    &__button--right {
-        right: 1em;
-        z-index: 1;
-    }
-
-    &__nav {
-        display: flex;
-        justify-content: center;
-        padding: .8em 0;
-    }
-
-    &__indicator {
-        border: 0;
-        border-radius: 50%;
-        width: 1em;
-        height: 1em;
-        margin: 0 .8em;
-        background-color: rgba($color: $white, $alpha: .3);
-        cursor: pointer;
-    }
-
-    &__indicator.current-slide {
-        background-color: rgba($color: $white, $alpha: .80);
-    }
-
-    &__indicator.current-slide3 {
-        background-color: rgba($color: $white, $alpha: .80);
-    }
-
-    .is-hidden, .is-hidden3 {
-        display: none;
-    }
+    
 }

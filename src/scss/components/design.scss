@@ -5,11 +5,12 @@
     height: 100%;
     background-color: $black;
     padding: 1em 0 0 1.5em;
-    font-size: $big-heading;
 
     a {
         color: $white;
         transition: all .3s;
+        font-size: $big-heading;
+
         &:hover {
             color: $red;
         }
@@ -68,11 +69,13 @@
             padding-right: 2em;
             padding-top: 1.5em;
 
-            &_heading {
+            &_heading2 {
                 font-size: $big-heading;
-                line-height: 3em;
+                line-height: 1.5em;
                 font-weight: 800;
                 letter-spacing: -.01em;
+                margin-bottom: 1em;
+                margin-top: 1em;
             }
 
             &_list{

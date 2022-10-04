@@ -1,0 +1,176 @@
+@use 'abstracts/' as *;
+
+@media (min-width: 300px)  and (max-width: 1250px){
+    .design-nav {
+        font-size: 8px;
+        a {
+            padding: 1em 0 0 .1em;
+
+        }
+    }
+    .design {
+        font-size: 7px;
+        .carousel_container {
+            height: 33em;
+            width: 85%;
+            .carousel2 {
+                height: 80%;
+                width: 100%;
+    
+                &__button {
+                    font-size: 6px;
+                }
+    
+                &__indicator {
+                    width: .8em;
+                    height: .8em;
+                }
+
+                &__image {
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &__info {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &__text {
+                width: 85%;
+                margin: 0 auto;
+                padding: 0;
+
+                &__heading2 {
+                        margin: 0 auto;                    
+                }
+
+            }
+        }
+    }
+
+    .pop-up{
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 425px)  and (max-width: 1250px) {
+    .design-nav {
+        font-size: 9px;
+        a {
+            padding: 1em 0 0 .1em;
+
+        }
+    }
+
+
+    .design {
+        font-size: 9px;
+        
+    }
+}
+
+@media (min-width: 500px)  and (max-width: 1250px) {
+    .design-nav {
+        font-size: 9px;
+        a {
+            padding: 1em 0 0 .1em;
+
+        }
+    }
+
+
+    .design {
+        font-size: 11px;
+        
+    }
+}
+
+@media (min-width: 600px)  and (max-width: 1250px) {
+    .design-nav {
+        font-size: 9px;
+        a {
+            padding: 1em 0 0 .1em;
+
+        }
+    }
+
+
+    .design {
+        font-size: 13px;
+        
+
+        .carousel_container {
+            height: 35em;
+            .carousel2 {
+                &__indicator {
+                    width: 1em;
+                    height: 1em;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 770px)  and (max-width: 1250px) {
+    .design-nav {
+        font-size: 12px;
+        a {
+            padding: 1em 0 0 .1em;
+
+        }
+    }
+
+
+    .design {
+        font-size: 15px;
+        
+
+        .carousel_container {
+            height: 35em;
+            .carousel2 {
+                &__indicator {
+                    width: 1em;
+                    height: 1em;
+                }
+
+                &__button {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: transparent;
+                    border: 0;
+                    cursor: pointer;
+            
+                    .icon {
+                        font-size: 5em;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 880px) and (max-width: 1250px) {
+    .design-nav {
+        font-size: 12px;
+        a {
+            padding: 1em 0 0 .1em;
+
+        }
+    }
+
+
+    .design {
+        font-size: 15px;
+        
+
+        .carousel_container {
+            height: 43em;
+        }
+    }
+}
