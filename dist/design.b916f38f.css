@@ -808,6 +808,7 @@
 }
 
 .pop-up {
+  overflow: hidden;
   border-radius: 2em;
   border: none;
   position: fixed;
@@ -918,7 +919,7 @@
     padding: 1em 0 0 0.1em;
   }
   .design {
-    font-size: 7px;
+    font-size: 8.5px;
   }
   .design .carousel_container {
     height: 33em;
@@ -952,7 +953,7 @@
     margin: 0 auto;
   }
   .pop-up {
-    font-size: 8px;
+    font-size: 9px;
   }
 }
 @media (min-width: 425px) and (max-width: 1250px) {
@@ -976,6 +977,9 @@
   .design {
     font-size: 11px;
   }
+  .pop-up {
+    font-size: 11px;
+  }
 }
 @media (min-width: 600px) and (max-width: 1250px) {
   .design-nav {
@@ -993,6 +997,9 @@
   .design .carousel_container .carousel2__indicator {
     width: 1em;
     height: 1em;
+  }
+  .pop-up {
+    font-size: 13px;
   }
 }
 @media (min-width: 770px) and (max-width: 1250px) {
@@ -1023,6 +1030,9 @@
   .design .carousel_container .carousel2__button .icon {
     font-size: 5em;
     color: #141414;
+  }
+  .pop-up {
+    font-size: 15px;
   }
 }
 @media (min-width: 880px) and (max-width: 1250px) {
