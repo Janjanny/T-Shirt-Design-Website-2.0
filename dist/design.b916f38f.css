@@ -922,7 +922,7 @@
     font-size: 8.5px;
   }
   .design .carousel_container {
-    height: 33em;
+    height: 28em;
     width: 85%;
   }
   .design .carousel_container .carousel2 {
@@ -1256,6 +1256,9 @@
 @media (max-width: 400px) {
   html, body {
     font-size: 8px;
+  }
+  .nav-bar {
+    padding: 0 20px;
   }
   .home .text-div {
     font-size: 8px;
