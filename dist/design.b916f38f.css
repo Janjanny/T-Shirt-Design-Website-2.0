@@ -287,7 +287,7 @@
   overflow: hidden;
   transition: all 0.5s;
 }
-.home .text-div .buttons .message-button span {
+.home .text-div .buttons .message-button a {
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
@@ -318,7 +318,7 @@
 .home .text-div .buttons .message-button:hover {
   border: 1px solid transparent;
 }
-.home .text-div .buttons .message-button:hover span {
+.home .text-div .buttons .message-button:hover a {
   color: #FF2626;
 }
 .home .image-div {
@@ -633,6 +633,7 @@
   text-align: center;
   margin-bottom: 5em;
   line-height: 1em;
+  text-transform: uppercase;
 }
 .design__info {
   display: flex;
@@ -922,15 +923,15 @@
     font-size: 8.5px;
   }
   .design .carousel_container {
-    height: 28em;
-    width: 85%;
+    height: 35em;
+    width: 95%;
   }
   .design .carousel_container .carousel2 {
     height: 80%;
     width: 100%;
   }
   .design .carousel_container .carousel2__button {
-    font-size: 6px;
+    font-size: 8px;
   }
   .design .carousel_container .carousel2__indicator {
     width: 0.8em;
